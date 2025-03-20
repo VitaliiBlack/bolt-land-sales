@@ -1,0 +1,83 @@
+dealfinder/
+├── app/
+│   ├── (main)/
+│   │   ├── admin/
+│   │   │   ├── deals/
+│   │   │   │   ├── create/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── edit/
+│   │   │   │   │   └── [id]/
+│   │   │   │   │       └── page.tsx
+│   │   │   │   └── [id]/
+│   │   │   │       ├── error.tsx
+│   │   │   │       └── loading.tsx
+│   │   │   ├── login/
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── deal/
+│   │   │   └── [id]/
+│   │   │       └── page.tsx
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── api/
+│   │   └── deals/
+│   │       ├── [id]/
+│   │       │   └── route.ts
+│   │       └── route.ts
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── not-found.tsx
+│   └── providers.tsx
+├── components/
+│   ├── DealCard.tsx
+│   ├── DealForm.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── LanguageSelector.tsx
+│   ├── ProtectedRoute.tsx
+│   ├── ThemeToggle.tsx
+│   └── ui/
+│       ├── Button.tsx
+│       └── Input.tsx
+├── config/
+│   ├── constants.ts
+│   └── site.ts
+├── context/
+│   ├── AuthContext.tsx
+│   ├── CategoryContext.tsx
+│   ├── LanguageContext.tsx
+│   └── ThemeContext.tsx
+├── hooks/
+│   └── useDeals.ts
+├── lib/
+│   ├── api/
+│   │   ├── client.ts
+│   │   ├── deals.ts
+│   │   ├── index.ts
+│   │   ├── mock/
+│   │   │   ├── data.ts
+│   │   │   └── deals.ts
+│   │   └── types.ts
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   └── useDeals.ts
+│   └── utils/
+│       ├── styles.ts
+│       └── validation.ts
+├── locales/
+│   ├── en.json
+│   └── ru.json
+├── store/
+│   ├── dealStore.ts
+│   └── mockData.ts
+├── types/
+│   └── index.ts
+├── .gitignore
+├── eslint.config.js
+├── middleware.ts
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.app.json
+└── tsconfig.json

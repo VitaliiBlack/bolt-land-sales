@@ -1,0 +1,13 @@
+# This file configures Netlify's build and deployment settings
+# Learn more at: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# This redirect rule is crucial for a single-page application with client-side routing
+# It tells Netlify to serve the index.html for any path, allowing React Router to handle routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
